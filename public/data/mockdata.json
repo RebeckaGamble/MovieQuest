@@ -1,0 +1,138 @@
+[
+    {
+      "id": 1,
+      "img": "/img/avengers.jpg",
+      "title": "Avengers: Infinity War",
+      "genre": ["Action", "Adventure", "Sci-Fi"],
+      "about": "The Avengers and their allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos before his blitz of devastation and ruin puts an end to the universe.",
+      "actors": ["Robert Downey Jr.", "Chris Hemsworth", "Mark Ruffalo"],
+      "rating": 8.5
+    },
+    {
+      "id": 2,
+      "img": "",
+      "title": "The Godfather",
+      "genre": ["Crime", "Drama"],
+      "about": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "actors": ["Marlon Brando", "Al Pacino", "James Caan"],
+      "rating": 9.2
+    },
+    {
+      "id": 3,
+      "img": "",
+      "title": "Inception",
+      "genre": ["Action", "Adventure", "Sci-Fi"],
+      "about": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "actors": ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"],
+      "rating": 8.8
+    },
+    {
+      "id": 4,
+      "img": "/img/batman.jpg",
+      "title": "The Dark Knight",
+      "genre": ["Action", "Crime", "Drama"],
+      "about": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. The Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+      "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"],
+      "rating": 9.0
+    },
+    {
+      "id": 5,
+      "img": "/img/pulp_fiction.jpg",
+      "title": "Pulp Fiction",
+      "genre": ["Crime", "Drama"],
+      "about": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "actors": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"],
+      "rating": 8.9
+    },
+    {
+      "id": 6,
+      "img": "/img/it.jpg",
+      "title": "It",
+      "genre": ["Horror", "Drama"],
+      "about": "In the summer of 1989, a group of bullied kids band together to destroy a shapeshifting monster that disguises itself as a clown and preys on the children of Derry, Maine.",
+      "actors": ["Bill Skarsgård", "Jaeden Lieberher", "Finn Wolfhard"],
+      "rating": 7.3
+    },
+    {
+      "id": 7,
+      "img": "/img/chucky.jpg",
+      "title": "Chucky",
+      "genre": ["Horror", "Thriller"],
+      "about": "Chucky, a doll possessed by the soul of a serial killer, terrorizes a young boy and his family.",
+      "actors": ["Brad Dourif", "Alex Vincent", "Catherine Hicks"],
+      "rating": 6.5
+    },
+    {
+      "id": 8,
+      "img": "/img/sparrow.jpg", 
+      "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+      "genre": ["Action", "Adventure", "Fantasy"],
+      "about": "A blacksmith named Will Turner teams up with eccentric pirate Captain Jack Sparrow to save his love, the governor's daughter, from cursed pirates.",
+      "actors": ["Johnny Depp", "Orlando Bloom", "Keira Knightley"],
+      "rating": 8.0
+    },
+    {
+      "id": 9,
+      "img": "/img/batman.jpg", 
+      "title": "Batman Begins",
+      "genre": ["Action", "Adventure", "Drama"],
+      "about": "After training with his mentor, Batman begins his fight to free crime-ridden Gotham City from corruption.",
+      "actors": ["Christian Bale", "Michael Caine", "Liam Neeson"],
+      "rating": 8.3
+    },
+    {
+      "id": 10,
+      "img": "/img/wars.jpg",
+      "title": "Star Wars: Episode IV - A New Hope",
+      "genre": ["Action", "Adventure", "Fantasy"],
+      "about": "A group of rebels, including Luke Skywalker, Princess Leia, and Han Solo, fight against the oppressive Galactic Empire and seek to destroy the Death Star.",
+      "actors": ["Mark Hamill", "Harrison Ford", "Carrie Fisher"],
+      "rating": 8.6
+    },
+    {
+      "id": 11,
+      "img": "/img/potter.jpg",
+      "title": "Harry Potter and the Sorcerer's Stone",
+      "genre": ["Fantasy", "Adventure"],
+      "about": "An orphaned boy discovers he is a wizard on his 11th birthday and attends Hogwarts School of Witchcraft and Wizardry, where he learns about his magical heritage and battles dark forces.",
+      "actors": ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
+      "rating": 7.6
+    },
+    {
+      "id": 12,
+      "img": "/img/the_beach.jpg",
+      "title": "The Beach",
+      "genre": ["Drama", "Thriller"],
+      "about": "A young backpacker discovers a secret island community in Thailand and becomes involved in its complicated social dynamics.",
+      "actors": ["Leonardo DiCaprio", "Virginie Ledoyen", "Guillaume Canet"],
+      "rating": 6.7
+    },
+    {
+      "id": 13,
+      "img": "/img/geisha.jpg",
+      "title": "Memoirs of a Geisha",
+      "genre": ["Drama", "Romance"],
+      "about": "A young Japanese girl is sold to a geisha house and learns the art of being a geisha, all while navigating love, jealousy, and betrayal in pre-World War II Japan.",
+      "actors": ["Zhang Ziyi", "Ken Watanabe", "Gong Li"],
+      "rating": 7.4
+    },
+    {
+      "id": 14,
+      "img": "/img/warrior.jpg",
+      "title": "The 13th Warrior",
+      "genre": ["Action", "Adventure", "Drama"],
+      "about": "A Muslim ambassador travels to the frozen North where he joins a group of Vikings to fight a mysterious and deadly foe.",
+      "actors": ["Antonio Banderas", "Diane Venora", "Vladimir Kulich"],
+      "rating": 6.6
+    },
+    {
+      "id": 15,
+      "img": "/img/war.jpg", 
+      "title": "All Quiet on the Western Front",
+      "genre": ["War", "Drama"],
+      "about": "A young German soldier's terrifying experiences and distress on the Western Front during World War I. As he and his comrades struggle to survive the trenches, they face the harsh realities of war and its devastating impact on their youth and innocence.",
+      "actors": ["Felix Kammerer", "Albrecht Schuch", "Aaron Hilmer", "Moritz Klaus", "Daniel Brühl"],
+      "rating": 7.8
+    }
+  ]
+  
