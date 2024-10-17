@@ -35,10 +35,10 @@ function MovieCard() {
             ? movies &&
               movies.map((movie) => (
                 <div
-                  className="flex flex-col shadow-white w-full relative h-auto mx-auto bg-[#0d253f] text-white shadow-2xl"
+                  className="flex flex-col shadow-white relative w-full h-auto mx-auto bg-[#0d253f] text-white shadow-2xl"
                   key={movie.id}
                 >
-                  <div className="w-full h-auto ">
+                  <div className="w-full h-auto">
                     <Link to={`/movies/${movie.id}`}>
                       {movie.backdrop_path && (
                         <img
@@ -47,12 +47,8 @@ function MovieCard() {
                         />
                       )}
                     </Link>
-                    <AddToFavourites
-                      css={"absolute right-0 top-0 p-2 "}
-                      size={20}
-                      movie={movie}
-                    />
                   </div>
+                    <AddToFavourites css={"py-2 px-4"} size={20} movie={movie} />
                   <Link to={`/movies/${movie.id}`}>
                     <div className="flex flex-col gap-2 px-4 pb-6">
                       <h2 className="font-semibold text-xl">{movie.title}</h2>
