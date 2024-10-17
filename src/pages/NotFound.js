@@ -3,20 +3,15 @@ import { Link } from "react-router-dom";
 
 function NotFound() {
   return (
-    <div className="bg-black text-red-600">
-      <div className="max-w-[90rem] mx-auto flex flex-col ">
-        <div className=" flex top-10 justify-center">
-          <div className="text-center flex flex-col">
-            <i
-              className="text-[20px] tracking-wider"
-              style={{ textShadow: "0.5px 0.5px white" }}
-            >
-              Nothing to see here..{" "}
-            </i>
-            <Link className="underline text-white pt-4" to="/">
-              Go back home{" "}
-            </Link>
-          </div>
+    <div className="bg-[#0d253f] h-auto min-h-screen">
+      <div className="max-w-[90rem] mx-auto">
+        <div className="text-center pt-40 px-4 h-full text-white flex flex-col">
+          <p className="text-[20px] tracking-wider">
+            Sorry, the page you're looking for can't be found!
+          </p>
+          <Link className="underline text-white pt-4" to="/">
+            Go back{" "}
+          </Link>
         </div>
       </div>
     </div>

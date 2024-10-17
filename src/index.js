@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./components/Layout";
 import NotFound from "./pages/NotFound";
 import SingleMoviePage from "./pages/SingleMoviePage";
+import Favourites from "./pages/Favourites";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,11 @@ const router = createBrowserRouter([
         element: <App />,
       },
       {
-        path: "/movies/:id", // Dynamisk route för specifik film baserat på IDelement:
+        path: "/favourites",
+        element: <Favourites />,
+      },
+      {
+        path: "/movies/:id",
         element: <SingleMoviePage />,
       },
     ],

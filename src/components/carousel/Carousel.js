@@ -1,38 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-
+import { fetchMovies } from "../../features/movieSlice";
 
 function CarouselSlider() {
-  const carouselImages = [
-    {
-      id: 1,
-      src: "/img/potter.jpg",
-      alt: "Harry Potter",
-      width: 430,
-      height: 300,
-      description: "Harry Potter",
-    },
-    {
-      id: 2,
-      src: "/img/batman.jpg",
-      alt: "Batman",
-      width: 430,
-      height: 300,
-      description: "Batman",
-    },
-    {
-      id: 3,
-      src: "/img/war.jpg",
-      alt: "War",
-      width: 430,
-      height: 300,
-      description: "War",
-    },
-  ];
+  const dispatch = useDispatch();
 
-  const customIndicator = (clickHandler, isSelected, hover, index, label) => {
+  const { movies } = useSelector((state) => state.movies);
+
+  useEffect(() => {
+    dispatch(fetchMovies());
+  }, [dispatch]);
+
+  const customIndicator = (clickHandler, isSelected, index) => {
     const indicatorStyle = {
       width: isSelected ? "16px" : "10px",
       height: isSelected ? "16px" : "10px",
@@ -41,7 +22,6 @@ function CarouselSlider() {
       display: "inline-block",
       margin: "0 8px",
       cursor: "pointer",
-    //  background: hover ? "black" : "#c4c4c4",
     };
 
     return (
@@ -55,24 +35,35 @@ function CarouselSlider() {
     );
   };
 
+  const carouselImages = movies.slice(1, 6);
+
   return (
     <Carousel
       renderIndicator={customIndicator}
       renderThumbs={() => null}
+      statusFormatter={() => null}
       autoPlay
+      showArrows={false}
       infiniteLoop
-      className="w-[400px] h-[600px] mx-auto"
+      className="max-w-[90rem] h-auto mx-auto"
     >
       {carouselImages.map((image) => {
         return (
-          <div key={image.id} className="w-[400px] h-[300px]">
+          <div
+            key={image.id}
+            className="w-auto h-full max-h-[800px] mx-auto relative"
+          >
             <img
-              className="max-h-fit w-full"
-              height={image.height}
-              src={image.src}
-              alt={image.alt}
+              className="h-auto w-auto object-contain"
+              src={`https://image.tmdb.org/t/p/original${image.backdrop_path}`}
+              alt={image.title}
             />
-            <p className="pt-4">{image.description}</p>
+            <p
+              className="absolute bottom-4 text-[16px] xl:text-[20px] left-4 text-white"
+              style={{ textShadow: "1px 1px black" }}
+            >
+              {image.title}
+            </p>
           </div>
         );
       })}
