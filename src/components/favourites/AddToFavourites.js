@@ -26,8 +26,18 @@ function AddToFavourites({ css, size, movie }) {
     }
     if (isFavourite) {
       dispatch(removeFromFavourites(movie.id));
+      window.dataLayer.push({
+        event: "add_to_favorites",
+        movieTitle: movie.title,
+        movieId: movie.id,
+      });
     } else {
       dispatch(addToFavourites(movie));
+      window.dataLayer.push({
+        event: "add_to_favorites",
+        movieTitle: movie.title,
+        movieId: movie.id,
+      });
     }
     setIsFavourite(!isFavourite);
   };
